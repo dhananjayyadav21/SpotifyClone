@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+/* main container*/
+.container {
+    display: flex;
+    gap: 10px;
+    padding: 7px;
+}
+
+/* container-left part of container */
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* container-left-home part */
+.home {
+    width: 20vw;
+    background-color: #121212;
+    color: white;
+    border-radius: 8px;
+    padding: 22px;
+}
+
+.home li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+    font-size: large;
+}
+
+.home li svg {
+    width: 23px;
+}
+
+/* container-left-library part */
+.library {
+    width: 20vw;
+    background-color: #121212;
+    color: white;
+    border-radius: 8px;
+    padding: 22px;
+    height: 67vh;
+}
+
+.library li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: large;
+}
+
+.library li svg {
+    width: 23px;
+}
+
+
+/* container-right part of container */
+.right {
+    width: 80vw;
+    border-radius: 8px;
+    background-color:#1e1d1d;
+}
+
+/* container-right-header part of container */
+.right .header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+    background-color: #121212;
+}
+
+.right .header .nav img{
+    width: 35px;
+}
+
+.right .header .buttn{
+    display: flex;
+    gap: 30px;
+}
+.right .header .buttn button{
+    background-color: #121212;
+    border: none; 
+}
+
+.right .header .buttn > :first-child{
+    color: rgb(105, 101, 101);
+    font-size: 16px;
+    font-weight: 900px;
+}
+
+.right .header .buttn >:nth-child(2){
+    color: black;
+    background-color: #fff;
+    border-radius: 28px;
+    padding: 14px 30px;
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+/* container-right-spotifylists part of container */
+.spotifyplaylist{
+    padding: 8px 25px;
+}
+
+.spotifyplaylist > :first-child{
+    margin-bottom: 8px;
+}
+
+
+.cardcollection{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+   overflow-y: scroll;
+    max-height: 70vh;
+}
+
+/* container-right-spotifylists cards  part of container */
+.card{
+    width: 158px;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 12px;
+    border-radius: 10px;
+    gap: 6px;
+    background-color: #121212;
+    
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+}
