@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
-:root{
-    --a:0;
+:root {
+    --a: 0;
 }
 
 * {
@@ -227,28 +227,29 @@ body {
     gap: 20px;
     flex-wrap: wrap;
     overflow-y: scroll;
-    max-height: 70vh;
+    max-height: 67vh;
 }
 
 
 /* container-right-spotifylists cards  part of container */
-.play{
+.play {
     width: 35px;
     height: 35px;
-    background-color: rgb(8, 178, 11);
+    background-color: rgb(36, 156, 38);
     border-radius: 50%;
     padding: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 248px;
-    left: 140px;
+    top: 118px;
+    left: 117px;
     opacity: var(--a);
     transition: all ease-in-out;
 }
 
 .card {
+    position: relative;
     width: 158px;
     font-size: 11px;
     display: flex;
@@ -261,10 +262,10 @@ body {
     transition: all 1.5s;
 }
 
-.card:hover{
+.card:hover {
     background-color: #272626;
     cursor: pointer;
-    --a:1;
+    --a: 1;
 }
 
 
@@ -293,7 +294,7 @@ body {
     border-radius: 25px;
     background-color: #000000;
     position: relative;
-    top: 42px;
+    top: 48px;
     left: 20px;
     left: 2.5%;
     transition: left 0.5s;
@@ -305,34 +306,33 @@ body {
     left: 0;
     width: 100%;
     background-color: rgb(165, 169, 134);
-    padding-top: 9px;
-    padding-bottom: 12px;
+    padding-top: 4px;
+    padding-bottom: 18px;
     filter: invert();
 }
 
 .songinfo {
     color: #050505;
-    padding: 0 12px;
+    margin-left: 20px;
+    max-width: 170px;
 }
 
 .songtime {
     color: #050505;
-    padding: 0 12px;
+    margin-right: 20px;
+    max-width: 170px;
+
 }
 
 .abovebar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .songbuttons {
     cursor: pointer;
 }
-
-.songplybutton {
-    padding: 0 5px;
-}
-
 
 
 /* dark color scroll bARRR */
@@ -424,7 +424,7 @@ body {
     }
 
     .circle {
-        top: 39px;
+        top: 47px;
     }
 
     .plybar {
@@ -435,12 +435,13 @@ body {
         margin-bottom: 10px;
     }
 
-    .close {
-        display: block;
+    .seekbar {
+        width: 94%;
+        margin-left: 18px;
     }
 
-    .seekbar {
-        width: 98%;
+    .close {
+        display: block;
     }
 
     .hamburger {
@@ -448,15 +449,14 @@ body {
     }
 
     .cardcollection {
-        max-height: 66vh;
-        margin-bottom: 75px;
+        max-height: 67vh;
+        margin-bottom: 80px;
     }
 }
 
 
 /* media query for 880 size screen */
 @media screen and (max-width:880px) {
-
     .home,
     .library {
         width: 40vw;
@@ -466,7 +466,6 @@ body {
 
 /* media query for 700 size screen */
 @media screen and (max-width:700px) {
-
     .home,
     .library {
         width: 50vw;
@@ -476,41 +475,9 @@ body {
 
 /* media query for 500 size screen */
 @media screen and (max-width:500px) {
-
     .home,
     .library {
         width: 87vw;
-    }
-
-    .plybar {
-        width: 95%;
-        font-size: 8px;
-    }
-
-    .seekbar {
-        width: 95%;
-        margin-bottom: 0;
-    }
-
-    .songplybutton {
-        width: 20px;
-        height: 20px;
-        padding: 0 1px;
-    }
-
-    .circle {
-        top: 34px;
-    }
-
-    .cardcollection {
-        max-height: 66vh;
-        margin-bottom: 65px;
-        justify-content: center;
-    }
-
-    .card {
-        width: 80vw;
-        margin: 0;
     }
 
     .right .header .buttn>:nth-child(2) {
@@ -520,6 +487,51 @@ body {
 
     .spotifyplaylist {
         padding: 18px 10px;
+    }
+
+    .cardcollection {
+        max-height: 64vh;
+        margin-bottom: 70px;
+        justify-content: center;
+    }
+
+    .card {
+        width: 80vw;
+        margin: 0;
+    }
+
+    .plybar {
+        width: 95%;
+        font-size: 8px;
+    }
+
+    .seekbar {
+        width: 90%;
+        margin-bottom: 6px;
+    }
+
+    .circle {
+        top: 41px;
+    }
+
+    .abovebar {
+        margin-bottom: 8px;
+    }
+
+    .songinfo,
+    songtime {
+        max-width: 70px;
+    }
+
+    .songplybutton {
+        width: 20px;
+        height: 20px;
+        padding: 0 1px;
+    }
+
+    .play {
+        top: 238px;
+        left: 237px;
     }
 }
 
