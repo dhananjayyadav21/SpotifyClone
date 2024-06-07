@@ -1,5 +1,5 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+# Workflow for deploying static content to GitHub Pages
+name: Deploy songs to GitHub Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -31,17 +31,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Copy Songs Content
+
+      - name: Prepare songs content
         run: |
-          mkdir pages
-          cp -r songs/* pages/
+          mkdir -p ./public/songs
+          cp -r ./songs/* ./public/songs/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload only the 'pages' folder containing the content of 'songs'
-          path: 'pages'
+          # Upload only the 'public' folder containing the content of 'songs'
+          path: './public'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
