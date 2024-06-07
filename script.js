@@ -132,3 +132,8 @@ async function main() {
 }
 
 main();
+
+
+
+
+playMusic (songs[0], true)

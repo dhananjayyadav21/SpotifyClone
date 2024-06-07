@@ -67,8 +67,6 @@ const playMusic = (track, pause = false) => {
     }
     document.querySelector(".songinfo").innerHTML = decodeURI(track)
     document.querySelector(".songtime").innerHTML = "00:00 / 00:00"
-
-
 }
 
 async function displayAlbums() {
