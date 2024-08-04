@@ -1,18 +1,22 @@
 # Spotify Clone
-This repository contains a Spotify clone created using HTML and CSS, with a focus on leveraging CSS Flexbox and Grid System for layout management. The project is designed to replicate the look and feel of the Spotify web player, providing an engaging and responsive user interface.
+This project is a Spotify clone built using HTML, CSS, and JavaScript. It simulates the basic functionalities of the popular music streaming platform, including playing, pausing, and navigating between songs.
 
-# Features:
-HTML5: Semantic and accessible HTML structure.
+# Features
+Play and Pause: Control the playback of songs with play and pause functionality.
 
-CSS3: Styling using modern CSS techniques.
+Next and Previous: Navigate between songs using the next and previous buttons.
 
-Flexbox: Flexible box layout for arranging elements in a one-dimensional space.
+User Interface: A visually appealing interface inspired by Spotify, created with HTML and CSS.
 
-Grid System: Two-dimensional grid-based layout for complex designs.
+Responsive Design: Ensures compatibility across different devices and screen sizes.
 
-Responsive Design: Ensures the layout adapts seamlessly across various devices and screen sizes.
+# Technologies Used
+HTML: For the structure and layout of the application.
 
-Media Queries: Custom styles for different screen resolutions.
+CSS: For styling and designing the user interface.
+
+JavaScript: For implementing the interactive functionalities like play, pause, next, and previous.
+
 
 # Live Demo:
 [Link to live demo](https://spotifyyweb.freewebhostmost.com/)
